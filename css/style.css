@@ -217,10 +217,30 @@ span {
   }
 }
 
+@media (min-width: 902px) {
+  #skills {
+    padding: 0;
+  }
+
+  #skill:hover {
+    font-size: 25px;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 #name {
   color: #27E0F5;
 }
 
 #role {
   color: #19E366;
+}
+
+#skill {
+  display: block;
+  -webkit-transition: font-size 1s, -webkit-transform 1s;
+  -moz-transition: font-size 1s, -moz-transform 1s;
+  transition: font-size 1s, transform 1s;
 }
