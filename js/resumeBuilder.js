@@ -2,7 +2,7 @@ var bio = {
 			"name": "Jiapeng Chen",
 			"role": "Software Developer",
 			"contacts":{
-				"mobile": "905 966 1216",
+				"mobile": "905 923 2688",
 				"email": "chenj59@mcmaster.ca",
 				"github": "@macu_123",
 				"twitter": "N/A",
@@ -10,10 +10,12 @@ var bio = {
 			},
 			"WelcomeMessage": "welcome to my site!",
 			"skills": [
-				"HTML", 
-				"CSS", 
-				"BOOTSTRAP", 
-				"JAVASCRIPT", 
+				"HTML",
+				"CSS",
+				"BOOTSTRAP",
+				"JAVASCRIPT",
+				"JQUERY",
+				"KNOCKOUT",
 				"JAVA",
 				"VB.NET"
 			],
