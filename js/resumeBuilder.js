@@ -33,21 +33,20 @@ var bio = {
 				var formatedpic = HTMLbioPic.replace("%data%", bio.bioPic);
 				var formatedmsg = HTMLWelcomeMsg.replace("%data%", bio.WelcomeMessage);
 
-				$('#header').prepend(formatedrole);
-				$('#header').prepend(formatedname);
-				$('#topContacts').append(formatedmobile);
-				$('#topContacts').append(formatedemail);
-				$('#topContacts').append(formatedgithub);
-				$('#topContacts').append(formatedtwitter);
-				$('#topContacts').append(formatedlocation);
-				$('#header').append(formatedpic);
-				$('#header').append(formatedmsg);
-				$('#header').append(HTMLskillsStart);
-				$('#footerContacts').append(formatedmobile);
-				$('#footerContacts').append(formatedemail);
-				$('#footerContacts').append(formatedgithub);
-				$('#footerContacts').append(formatedtwitter);
-				$('#footerContacts').append(formatedlocation);
+				$('#header').prepend(formatedrole).prepend(formatedname)
+					.append(formatedpic)
+					.append(formatedmsg)
+					.append(HTMLskillsStart);
+				$('#topContacts').append(formatedmobile)
+					.append(formatedemail)
+					.append(formatedgithub)
+					.append(formatedtwitter)
+					.append(formatedlocation);
+				$('#footerContacts').append(formatedmobile)
+					.append(formatedemail)
+					.append(formatedgithub)
+					.append(formatedtwitter)
+					.append(formatedlocation);
 
 				for(index in bio.skills){
 					var formatedskill = HTMLskills.replace("%data%", bio.skills[index]);
@@ -101,11 +100,12 @@ var bio = {
 				var formatedmajors = HTMLschoolMajor .replace("%data%", school.majors);
 
 				$('#education').append(HTMLschoolStart);
-				$('.education-entry:last').append(formatedname + formateddegree);
-				$('.education-entry:last').append(formatedlocation);
-				$('.education-entry:last').append(formateddates);
-				$('.education-entry:last').append(formatedmajors);
-				$('.education-entry:last').children('a').attr("href", school.url);
+				$('.education-entry:last').append(formatedname + formateddegree)
+					.append(formatedlocation)
+					.append(formateddates)
+					.append(formatedmajors)
+					.children('a')
+					.attr("href", school.url);
 				
 			}
 
@@ -118,9 +118,9 @@ var bio = {
 				var formateddates = HTMLonlineDates.replace("%data%", onlineCourse.date);
 				
 				$('#education').append(HTMLschoolStart);
-				$('.education-entry:last').append(formatedtitle + formatedschool);
-				$('.education-entry:last').append(formateddates);
-				$('.education-entry:last').children('a').attr("href", onlineCourse.url);
+				$('.education-entry:last').append(formatedtitle + formatedschool)
+					.append(formateddates)
+					.children('a').attr("href", onlineCourse.url);
 			}
 
 		}
@@ -154,10 +154,10 @@ var bio = {
 				var formateddescription = HTMLworkDescription.replace("%data%", job.description);
 
 				$('#workExperience').append(HTMLworkStart);
-				$('.work-entry:last').append(formatedemployer + formatedtitle);
-				$('.work-entry:last').append(formateddates);
-				$('.work-entry:last').append(formatedlocation);
-				$('.work-entry:last').append(formateddescription);
+				$('.work-entry:last').append(formatedemployer + formatedtitle)
+					.append(formateddates)
+					.append(formatedlocation)
+					.append(formateddescription);
 				
 			}
 		}
@@ -205,9 +205,9 @@ var bio = {
 				var formateddescription = HTMLprojectDescription.replace("%data%", project.description);
 				
 				$("#projects").append(HTMLprojectStart);
-				$('.project-entry:last').append(formatedtitle);
-				$('.project-entry:last').append(formateddates);
-				$('.project-entry:last').append(formateddescription);
+				$('.project-entry:last').append(formatedtitle)
+					.append(formateddates)
+					.append(formateddescription);
 
 				for(index2 in project.images){
 					var image = project.images[index2];
@@ -222,10 +222,10 @@ var bio = {
 						"data-target": "#enlarge" + index1 + index2
 					});
 					$(formatedmodal1).insertAfter('#main');
-					$('#enlarge' + index1 + index2).append(HTMLmodal2);
-					$('#enlarge' + index1 + index2).children('.modal-lg').append(HTMLmodal3);
-					$('#enlarge' + index1 + index2).find('.modal-content').append(formatedimage_enlarge);
-					$('#enlarge' + index1 + index2).find('img').addClass("img-responsive");
+					$('#enlarge' + index1 + index2).append(HTMLmodal2)
+						.children('.modal-lg').append(HTMLmodal3)
+						.find('.modal-content').append(formatedimage_enlarge)
+						.find('img').addClass("img-responsive");
 				}
 			}
 		}
