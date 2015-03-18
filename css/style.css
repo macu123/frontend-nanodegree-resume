@@ -24,7 +24,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
+  color: #f07763;
   line-height: 29px;
   padding: 10px;
 }
@@ -74,7 +74,7 @@ p {
 }
 
 a {
-  color: #1199C3;
+  color: #698dc5;
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -108,7 +108,6 @@ a {
 .gray {
   background-color: #F3F3F3;
   padding-bottom: 10px;
-  clear:both;
 }
 
 .dark-gray {
