@@ -211,7 +211,7 @@ span {
   }
 }
 
-@media (min-width: 902px) {
+@media (min-width: 1000px) {
   #skills {
     padding: 0;
   }
