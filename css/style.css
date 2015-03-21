@@ -8,9 +8,9 @@
   overflow: auto;
 }
 
-.education-entry, .work-entry, .project-entry {
-  padding-left: 5%;
-  padding-right: 5%;
+.project-entry {
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 h1 {
@@ -26,7 +26,6 @@ h2 {
   font-size: 24px;
   color: #f07763;
   line-height: 29px;
-  padding: 10px;
 }
 
 h3 {
@@ -43,7 +42,7 @@ h4 {
   line-height: 17px;
 }
 
-h2, h3, h4, h5 {
+h3, h4, h5 {
   padding:10px;
   padding-left: 5%;
   padding-right: 5%;
@@ -129,10 +128,7 @@ a {
 }
 
 .center-content {
-  padding-top: 2.5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 2.5%
+  padding: 2.5%
 }
 
 ul {
@@ -199,14 +195,13 @@ span {
 #map {
   display: block;
   height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 100%;
 }
 
 #mapDiv {
   height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
+  padding: 0 1% 7%;
+
 }
 
 @media only screen and (min-width: 750px) {
@@ -242,4 +237,12 @@ span {
   -webkit-transition: font-size 1s, -webkit-transform 1s;
   -moz-transition: font-size 1s, -moz-transform 1s;
   transition: font-size 1s, transform 1s;
+}
+
+#projects h2 {
+  padding-left: 3%;
+}
+
+#combine {
+  padding: 1%;
 }
