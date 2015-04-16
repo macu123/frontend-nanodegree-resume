@@ -12,12 +12,12 @@ var bio = {
 			"skills": [
 				"HTML",
 				"CSS",
-				"BOOTSTRAP",
-				"JAVASCRIPT",
-				"JQUERY",
-				"KNOCKOUT",
-				"JAVA",
-				"VB.NET"
+				"Bootstrap",
+				"JavaScript",
+				"jQuery",
+				"KnockoutJS",
+				"ProcessingJS",
+				"Java"
 			],
 			"bioPic": "images/profileImg.jpg",
 		}
