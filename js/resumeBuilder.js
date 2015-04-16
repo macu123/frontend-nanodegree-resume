@@ -1,6 +1,6 @@
 var bio = {
-			"name": "Jiapeng Chen",
-			"role": "Software Developer",
+			"name": "John Chen",
+			"role": "Software Engineer",
 			"contacts":{
 				"mobile": "905 923 2688",
 				"email": "chenj59@mcmaster.ca",
@@ -19,7 +19,7 @@ var bio = {
 				"JAVA",
 				"VB.NET"
 			],
-			"bioPic": "images/fry.jpg",
+			"bioPic": "images/profileImg.jpg",
 		}
 
 		bio.display = function(){
