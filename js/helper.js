@@ -47,7 +47,7 @@ var HTMLschoolName = "<a href='#'>%data%";
 var HTMLschoolDegree = " -- %data%</a>";
 var HTMLschoolDates = "<div class='date-text'>%data%</div>";
 var HTMLschoolLocation = "<div class='location-text'>%data%</div>";
-var HTMLschoolMajor = "<em><br>Major: %data%</em>"
+var HTMLschoolMajor = "<em><br>Major: %data%</em>";
 
 var HTMLonlineClasses = "<h3>Online Classes</h3>";
 var HTMLonlineTitle = "<a href='#'>%data%";
@@ -73,7 +73,7 @@ $(document).ready(function() {
     var iName = inName(name) || function(){};
     $('#name').html(iName);  
   });
-})
+});
 
 /*
 The next few lines about clicks are for the Collecting Click Locations quiz in Lesson 2.
@@ -144,7 +144,7 @@ var map;
     var service = new google.maps.places.PlacesService(map);
     
     // Iterates through the array of locations, creates a search object for each location
-    for (index in locations) {
+    for (var index in locations) {
 
       // the search request object
       var request = {
@@ -242,7 +242,7 @@ function initializeMap() {
   // the locations array
   pinPoster(locations);
   
-};
+}
 
 /*
 Uncomment the code below when you're ready to implement a Google Map!
