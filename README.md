@@ -1,6 +1,6 @@
-Interactive Resume<br>
+**Interactive Resume**<br>
 <br>
-Link: http://macu123.github.io/frontend-nanodegree-resume/<br>
+[My Resume](http://macu123.github.io/frontend-nanodegree-resume/)<br>
 <br>
 In this project I built my own interactive resume using Javascript.<br>
 <br>
